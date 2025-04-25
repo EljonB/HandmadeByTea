@@ -1,0 +1,157 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background:      #fff0f5    ; /* Light gray background for contrast */
+}
+
+
+/* Header styles */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 40px; /* Increased padding for a larger header */
+    background: #FFB6C1; /* Light pink */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    width: 60px; /* Increased logo size */
+    height: auto;
+    margin-right: 20px; /* Space between logo and title */
+    position: absolute;
+    left: 30px; /* Move logo to the left */
+}
+
+.site-title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 32px; /* Increased font size for the title */
+    text-align: center;
+}
+
+/* Main content */
+main {
+    margin-top: 80px;
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.intro {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+    background-color:  #ffdee3    ; /* White background for the intro text */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.shop-window {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.shop-window img {
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.shop-window img:hover {
+    transform: scale(1.05);
+}
+
+.shop-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 24px;
+    font-family: 'Great Vibes', cursive;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background: #FFB6C1; /* Light pink */
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.social-icons {
+    font-size: 24px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #000;
+}
+
+.social-icons a:hover {
+    color: #FF6347;
+}
+
+.copyright {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #444;
+}
+
+/* Container for the buttons */
+.switch-buttons {
+    display: flex; /* Align buttons in a row */
+    gap: 10px; /* Space between buttons */
+    margin-top: 20px; /* Space above the buttons */
+    justify-content: center; /* Center the buttons */
+}
+
+/* Style for the switch button (clickable) */
+.switch-button {
+    background-color:#FF6347; /* Black background */
+    color: white; /* White text */
+    border: none; /* Remove default border */
+    padding: 10px 20px; /* Add padding */
+    font-size: 16px; /* Text size */
+    cursor: pointer; /* Pointer on hover */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition for background */
+}
+
+.switch-button:hover {
+    background-color: #555555; /* Darker grey on hover */
+}
+
+.switch-button:active {
+    background-color:#FF6347; /* Even darker grey when clicked */
+}
+
+/* Style for the active button (disabled) */
+.active-button {
+    background-color: #e0e0e0; /* Light grey background */
+    color: #888888; /* Dark grey text */
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding to match the switch buttons */
+    font-size: 16px; /* Same text size */
+    cursor: not-allowed; /* Show not-allowed cursor */
+    border-radius: 5px; /* Rounded corners */
+    opacity: 0.6; /* Slightly faded appearance */
+}
