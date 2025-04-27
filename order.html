@@ -142,7 +142,6 @@
 
   <!-- Header -->
   <header>
-    
     <img src="logo1.png" alt="Logo" class="logo">
     <div class="site-title">Handmade by Tea</div>
   </header>
@@ -159,6 +158,8 @@
 
     <h3>Select Size</h3>
     <select id="size">
+      <option value="6-9 months">6-9 Months</option>
+      <option value="9-12 months">9-12 Months</option>
       <option value="1">1 Year</option>
       <option value="2">2 Years</option>
       <option value="3">3 Years</option>
@@ -187,7 +188,7 @@
     <div class="social-icons">
       <a href="https://www.instagram.com/handmade.by.tea/"><i class="fab fa-instagram"></i></a>
       <a href="https://www.tiktok.com/@handmade.by.tea"><i class="fab fa-tiktok"></i></a>
-      <a href="https://wa.me/355685727811"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://wa.me/3559449442"><i class="fab fa-whatsapp"></i></a>
     </div>
     <div class="copyright">&copy; 2025 Handmade by Tea. All rights reserved.</div>
   </footer>
@@ -235,8 +236,15 @@
       const size = document.getElementById("size").value;
       const productName = document.getElementById("product-name").textContent;
 
-      const message = `*New Order*\nDress: ${productName}\nName: ${name}\nAddress: ${address}\nPhone: ${phone}\nSize: ${size}`;
-      const whatsappUrl = `https://wa.me/+355685727811?text=${encodeURIComponent(message)}`;
+      const message = `
+*New Order*
+Dress: ${productName}
+Size: ${size}
+Name: ${name}
+Address: ${address}
+Phone: ${phone}`;
+
+      const whatsappUrl = `https://wa.me/+355689449442?text=${encodeURIComponent(message)}`;
       window.open(whatsappUrl, "_blank");
     });
 
