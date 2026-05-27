@@ -1,44 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Handmade by Tea</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Great+Vibes&display=swap" rel="stylesheet">
-    <link rel="icon" href="Logo1.png">
+    <meta charset="utf-8">
+    <title>Skema Elektrike e Detajuar - Apartament 1+1</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+            color: #1e293b;
+            padding: 20px;
+            background-color: #ffffff;
+        }
+        .header {
+            margin-bottom: 15px;
+            border-bottom: 3px solid #0f172a;
+            padding-bottom: 6px;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 18px;
+            color: #0f172a;
+            text-transform: uppercase;
+            font-weight: 800;
+        }
+        .diagram-container {
+            width: 100%;
+            border: 1.5px solid #cbd5e1;
+            background-color: #f8fafc;
+            border-radius: 6px;
+            margin-bottom: 15px;
+            padding: 12px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 5px;
+            margin-bottom: 15px;
+        }
+        th, td {
+            border: 1px solid #475569;
+            padding: 6px 4px;
+            text-align: center;
+            font-size: 11px;
+        }
+        .row-title {
+            text-align: left;
+            font-weight: 700;
+            background-color: #f1f5f9;
+            color: #0f172a;
+            width: 200px;
+            text-transform: uppercase;
+            padding-left: 6px;
+        }
+        .header-row {
+            background-color: #0f172a;
+            color: #ffffff;
+            font-weight: 700;
+        }
+        .general-info {
+            width: 100%;
+            margin-bottom: 15px;
+            border: 1.5px solid #cbd5e1;
+            background-color: #f8fafc;
+        }
+        .general-info td {
+            border: none;
+            text-align: left;
+            padding: 8px 12px;
+            font-size: 13px;
+        }
+        .footer-table {
+            border: 2px solid #0f172a;
+        }
+        .footer-title {
+            font-weight: 700;
+            color: #0f172a;
+            background-color: #f1f5f9;
+            text-transform: uppercase;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <img src="logo1.png" alt="Logo" class="logo">
-        <div class="site-title">Handmade by Tea</div>
-    </header>
-    <main>
-        <h2>Welcome to Handmade by Tea!</h2>
-        <p class="intro">At Handmade by Tea, we believe that every dress tells a unique story.
-             Each piece is carefully crafted with love and attention to detail, designed to bring out
-              the beauty in every wearer. Our dresses are not just fashion statements—they are 
-              expressions of individuality and creativity, made from the finest materials to ensure
-               comfort and style. Whether you're looking for something elegant for a special occasion
-                or a fun piece to brighten up your wardrobe, you'll find the perfect dress here. 
-                Join us in celebrating the art of handmade fashion, one dress at a time.
-        </p>
-        <div class="shop-window">
-            <a href="dresses.html">
-                <img src="Dresses Images/Dress1_1.PNG" alt="Shop Dresses">
-                <div class="shop-text">Dresses Collection</div>
-            </a>
-        </div>
-    </main>
-    <footer>
-        <p>Follow Us</p>
-        <div class="social-icons">
-          <a href="https://www.instagram.com/handmade.by.tea/"><i class="fab fa-instagram"></i></a>
-          <a href="https://www.tiktok.com/@handmade.by.tea"><i class="fab fa-tiktok"></i></a>
-          <a href="https://wa.me/355685727811"><i class="fab fa-whatsapp"></i></a>
-        </div>
-        <div class="copyright">&copy; 2025 Handmade by Tea. All rights reserved.</div>
-      </footer>
-</body>
-</html>
+
+    <div class="header">
+        <h1>Skema Elektrike e Shperndarjes (Njevijore) - Apartament Tip 1+1</h1>
+    </div>
+
+    <table class="general-info">
+        <tr>
+            <td><strong>Fuqia e Instaluar (Pinst):</strong> 9.5 kW</td>
+            <td><strong>Fuqia e Perdorur (Pker):</strong> 5.05 kW</td>
+            <td><strong>Tensioni Nominal (Un):</strong> 230 V (Monofaze)</td>
+        </tr>
+    </table>
+
+    <div class="diagram-container">
+        <svg width="100%" height="220" viewBox="0 0 1000 220" xmlns="http://www.w3.org/2000/svg">
+            <line x1="0" y1="30" x2="1000" y2="30" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="5,5" />
+            <line x1="0" y1="125" x2="1000" y2="125" stroke="#e2e8f0" stroke-width="1" stroke-dasharray="5,5" />
+
+            <path d="M 30,30 L 110,30" stroke="#ef4444" stroke-width="3" fill="none" />
+            <circle cx="30" cy="30" r="4" fill="#ef4444" />
+            <text x="30" y="16" font-family="Arial" font-size="10" font-weight="bold" fill="#ef4444">Linja Kryesore e Furnizimit (Kablo 3x6 mm²)</text>
+            
+            <rect x="110" y="12" width="45" height="36" rx="4" fill="#0f172a" />
+            <text x="121" y="34" font-family="Arial" font-size="11" font-weight="bold" fill="#ffffff">Q.1</text>
+            
+            <text x="165" y="24" font-family="Arial" font-size="9" font-weight="bold" fill="#0f172a">Automat C32 2P</text>
+            <text x="165" y="38" font-family="Arial" font-size="8.5" font-weight="600" fill="#2563eb">Mbrojtje RCD 30mA (Idn)</text>
+
+            <line x1="340" y1="30" x2="340" y2="200" stroke="#0f172a" stroke-width="4" stroke-linecap="round" />
+            <line x1="155" y1="30" x2="340" y2="30" stroke="#0f172a" stroke-width="
