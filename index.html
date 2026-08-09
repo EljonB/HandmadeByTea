@@ -42,7 +42,7 @@
             top: 0;
             background-color: rgba(5, 5, 5, 0.95);
             z-index: 1000;
-            height: 85px; /* Lartësi e fiksuar për llogaritjen e Hero-s */
+            height: 85px;
         }
 
         .logo {
@@ -104,7 +104,6 @@
             justify-content: center;
             align-items: center;
             
-            /* Sfondi i shtuar me gradient të errët për të theksuar tekstin */
             background-image: linear-gradient(rgba(5, 5, 5, 0.6), rgba(5, 5, 5, 0.9)), 
                               url('https://images.unsplash.com/photo-1514933651103-005eec06c04b?q=80&w=1934&auto=format&fit=crop');
             background-size: cover;
@@ -113,7 +112,7 @@
         }
         .hero-content {
             max-width: 600px;
-            margin-top: -10vh; /* Për ta ngritur tekstin pak më lart për pamje më të mirë vizuale */
+            margin-top: -10vh;
         }
         .hero h1 {
             font-family: 'Playfair Display', serif;
@@ -143,7 +142,6 @@
             cursor: pointer;
             text-decoration: none;
             transition: 0.3s;
-            /* Për të siguruar që butonat duken mirë mbi foto */
             backdrop-filter: blur(2px);
         }
         .hero-btn:hover {
@@ -271,7 +269,7 @@
         <a href="#footer-contact" onclick="closeMenu()">Contact</a>
     </div>
 
-    <!-- Hero Section (Tani është Full Page me sfond imazhi) -->
+    <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
             <h1>An intimate escape where the night moves <span>slowly.</span></h1>
@@ -289,14 +287,34 @@
         <!-- Cafeteria -->
         <div class="accordion-item">
             <button class="accordion-header">
-                Cafeteria <span class="count">4</span> <i class="fas fa-chevron-down icon"></i>
+                Cafeteria <span class="count">24</span> <i class="fas fa-chevron-down icon"></i>
             </button>
             <div class="accordion-content">
                 <div class="product-list">
-                    <div class="product-row"><span class="product-name">Espresso</span><span class="product-price">100 L</span></div>
-                    <div class="product-row"><span class="product-name">Macchiato</span><span class="product-price">120 L</span></div>
-                    <div class="product-row"><span class="product-name">Cappuccino</span><span class="product-price">150 L</span></div>
-                    <div class="product-row"><span class="product-name">Freddo Espresso</span><span class="product-price">200 L</span></div>
+                    <div class="product-row"><span class="product-name">Makiato</span><span class="product-price">100 L</span></div>
+                    <div class="product-row"><span class="product-name">Caj Bio me Mjalt</span><span class="product-price">180 L</span></div>
+                    <div class="product-row"><span class="product-name">Cokollate e Ftohte</span><span class="product-price">250 L</span></div>
+                    <div class="product-row"><span class="product-name">Cokollate e Ngrohte</span><span class="product-price">200 L</span></div>
+                    <div class="product-row"><span class="product-name">Corretto Baileys</span><span class="product-price">170 L</span></div>
+                    <div class="product-row"><span class="product-name">Corretto Sambuca</span><span class="product-price">170 L</span></div>
+                    <div class="product-row"><span class="product-name">Decaffeinato</span><span class="product-price">120 L</span></div>
+                    <div class="product-row"><span class="product-name">Freddo</span><span class="product-price">220 L</span></div>
+                    <div class="product-row"><span class="product-name">Freddo Kapucino</span><span class="product-price">260 L</span></div>
+                    <div class="product-row"><span class="product-name">Freddoccino</span><span class="product-price">250 L</span></div>
+                    <div class="product-row"><span class="product-name">Fredo Cappuccino Decafeinato</span><span class="product-price">280 L</span></div>
+                    <div class="product-row"><span class="product-name">Kafe</span><span class="product-price">90 L</span></div>
+                    <div class="product-row"><span class="product-name">Kafe Americano</span><span class="product-price">100 L</span></div>
+                    <div class="product-row"><span class="product-name">Kafe Latte</span><span class="product-price">250 L</span></div>
+                    <div class="product-row"><span class="product-name">Kakao</span><span class="product-price">220 L</span></div>
+                    <div class="product-row"><span class="product-name">Kakao e Ftohte</span><span class="product-price">250 L</span></div>
+                    <div class="product-row"><span class="product-name">Kapucino Bustine</span><span class="product-price">220 L</span></div>
+                    <div class="product-row"><span class="product-name">Kapucino Decaffeinato</span><span class="product-price">220 L</span></div>
+                    <div class="product-row"><span class="product-name">Kapucino e Ftohte</span><span class="product-price">250 L</span></div>
+                    <div class="product-row"><span class="product-name">Kapucino me Kafe</span><span class="product-price">220 L</span></div>
+                    <div class="product-row"><span class="product-name">Makiato Decaffeinato</span><span class="product-price">130 L</span></div>
+                    <div class="product-row"><span class="product-name">Makiato e Ftohte</span><span class="product-price">130 L</span></div>
+                    <div class="product-row"><span class="product-name">Nescafe Frappe</span><span class="product-price">220 L</span></div>
+                    <div class="product-row"><span class="product-name">Salep</span><span class="product-price">200 L</span></div>
                 </div>
             </div>
         </div>
@@ -372,7 +390,6 @@
     <footer id="footer-contact">
         <div class="social-icons">
             <a href="https://instagram.com/uma_bar_" target="_blank"><i class="fab fa-instagram"></i></a>
-            <!-- Whatsapp-i është lënë bosh me # deri sa të kesh një numër -->
             <a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a>
             <a href="https://maps.app.goo.gl/i1yS7meV99Bg51C59?g_st=ic" target="_blank"><i class="fas fa-map-marker-alt"></i></a>
         </div>
@@ -383,25 +400,21 @@
         const navMenu = document.getElementById("navMenu");
         const hamburgerBtn = document.querySelector(".hamburger");
 
-        // Funksioni për hapjen/mbylljen e menysë kur klikohet ikona
         function toggleMenu(event) {
-            event.stopPropagation(); // Ndalon eventin që të kapet nga dokumenti
+            event.stopPropagation();
             navMenu.classList.toggle("active");
         }
 
-        // Funksioni specifik për të mbyllur menynë kur klikohen linket brenda saj
         function closeMenu() {
             navMenu.classList.remove("active");
         }
 
-        // Funksioni për të mbyllur menynë kur klikohet jashtë saj
         document.addEventListener('click', function(event) {
             if (!navMenu.contains(event.target) && !hamburgerBtn.contains(event.target)) {
                 navMenu.classList.remove("active");
             }
         });
 
-        // Funksioni për Accordion (Hapja e njërës mbyll të tjerat)
         const accordions = document.querySelectorAll(".accordion-header");
 
         accordions.forEach(acc => {
